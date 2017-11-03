@@ -7,25 +7,33 @@
     <title>National Contiguity</title>
 
     <!-- Style sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./CSS/output.css" />
   </head>
   <body>
-    <!-- D3 v4 CDN -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- D3 CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
 
-    <!-- D3 topoJSON CDN -->
-    <script src="//d3js.org/topojson.v1.min.js"></script>
-
-    <h1>Meteorite Landings Across the Globe</h1>
-      <div id="map"></div>
-      <div id="tooltip"></div>
-    <footer>
-      Sources:<br />
-      Pen inspired by <a href="https://bl.ocks.org/mbostock/4183330">Mike Bostock's World Tour example</a><br />
-      World map data: https://raw.githubusercontent.com/mbostock/topojson/master/examples/world-110m.json<br />
-      Meteorite landing data: https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json<br />
-      Background space image: nasa.gov, Hubble Peers into the Mouth of Leo A
-    </footer>
+    <div class="container-fluid">
+      <div class="chartBlock">
+        <h1 class="text-center header">
+          Force Directed Graph of Country Contiguity
+          <p class="text-center">
+            Connections indicate countries sharing a border
+          </p>
+        </h1>
+        <div id="chart">
+          <div class="flagHTML"></div>
+        </div>
+        <div id="tooltip"></div>
+        <div class="footer">
+          Sources:<br />
+          Data: https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json
+          <br />
+          Flags: https://www.flag-sprites.com/en_US/
+        </div>
+      </div>
+    </div> <!-- End container fluid -->
 
     <!-- Script with D3 code -->
     <script type="text/javascript" src="./JS/script.js"></script>
