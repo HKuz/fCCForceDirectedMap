@@ -12,6 +12,7 @@ $gray: gray;
 $darkBlue: #26465F;
 $beige: #FCDEBB;
 $backgroundColor: $darkBlue;
+$backgroundImg: '../Images/old-map-or-world.jpeg';
 $chartBG: $beige;
 $shadow: $black;
 $linkColor: $gray;
@@ -31,7 +32,12 @@ $flagImg: "https://dl.dropboxusercontent.com/s/09fgr2zveebrd1m/flags.png";
 // CSS
 body {
   font-family: $textFonts;
-  background-color: $backgroundColor;
+  // background-color: $backgroundColor;
+  background-image: url($backgroundImg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 .chartBlock {
@@ -41,7 +47,7 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: $chartBG;
-  opacity: 0.90;
+  opacity: 0.75;
   box-shadow: 2px 2px 2px $shadow;
   @include borderRad(3px);
 

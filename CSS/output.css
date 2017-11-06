@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 body {
   font-family: "Cabin Condensed", "Helvetica Neue", sans-serif;
-  background-color: #26465F; }
+  background-image: url("../Images/old-map-or-world.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
 
 .chartBlock {
   display: block;
@@ -10,7 +14,7 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #FCDEBB;
-  opacity: 0.90;
+  opacity: 0.75;
   box-shadow: 2px 2px 2px #000;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
